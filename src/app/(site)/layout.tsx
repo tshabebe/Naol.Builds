@@ -1,15 +1,14 @@
-import Header from '@/features/landing/header';
-import type { ReactNode } from 'react';
+import type { ReactNode } from "react";
 
 function layout({ children }: { children: ReactNode }) {
-  return (
-    <div>
-      <header className="container">
-        <Header />
-      </header>
-      {children}
-    </div>
-  );
+	return (
+		<div>
+			<header className="container">
+				<div>{}</div>
+			</header>
+			{children}
+		</div>
+	);
 }
 
 export default layout;
