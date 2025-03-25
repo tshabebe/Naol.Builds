@@ -26,7 +26,7 @@ export function UserRole({ ...props }: SelectProps) {
           <Icon name="ChevronDown" />
         </span>
       </Button>
-      <Popover className={'w-[--trigger-width]'}>
+      <Popover className={'w-(--trigger-width)'}>
         <ListBox
           className={
             'overflow-hidden rounded-md border border-gray-elevation-3-border bg-gray-elevation-2'
@@ -39,7 +39,7 @@ export function UserRole({ ...props }: SelectProps) {
                 id={role.name}
                 className={({ isSelected, isFocused }) =>
                   cn(
-                    'cursor-pointer p-2 outline-none',
+                    'cursor-pointer p-2 outline-hidden',
                     isFocused && 'bg-gray-elevation-2-hover',
                     isSelected && 'bg-gray-elevation-4',
                   )

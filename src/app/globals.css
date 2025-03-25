@@ -1,6 +1,156 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --color-background: hsl(var(--gray-1));
+  --color-foreground: hsl(var(--gray-11));
+  --color-border: hsl(var(--gray-6));
+  --color-border-hover: hsl(var(--gray-7));
+
+  --color-gray: hsl(var(--gray-9));
+  --color-gray-base: hsl(var(--gray-1));
+  --color-gray-elevation-1: hsl(var(--gray-2));
+  --color-gray-elevation-1-hover: hsl(var(--gray-3));
+  --color-gray-elevation-1-border: hsl(var(--gray-5));
+  --color-gray-elevation-1-border-hover: hsl(var(--gray-6));
+  --color-gray-elevation-2: hsl(var(--gray-3));
+  --color-gray-elevation-2-hover: hsl(var(--gray-4));
+  --color-gray-elevation-2-border: hsl(var(--gray-6));
+  --color-gray-elevation-2-border-hover: hsl(var(--gray-7));
+  --color-gray-elevation-3: hsl(var(--gray-4));
+  --color-gray-elevation-3-hover: hsl(var(--gray-5));
+  --color-gray-elevation-3-border: hsl(var(--gray-7));
+  --color-gray-elevation-3-border-hover: hsl(var(--gray-8));
+  --color-gray-elevation-4: hsl(var(--gray-5));
+  --color-gray-elevation-4-hover: hsl(var(--gray-6));
+  --color-gray-elevation-4-border: hsl(var(--gray-8));
+  --color-gray-elevation-4-border-hover: hsl(var(--gray-9));
+  --color-gray-text-primary: hsl(var(--gray-11));
+  --color-gray-text-primary-hover: hsl(var(--gray-12));
+  --color-gray-text-secondary: hsl(var(--gray-10));
+  --color-gray-text-secondary-hover: hsl(var(--gray-11));
+  --color-gray-text-tertiary: hsl(var(--gray-9));
+  --color-gray-text-tertiary-hover: hsl(var(--gray-10));
+  --color-gray-text-quaternary: hsl(var(--gray-8));
+  --color-gray-text-quaternary-hover: hsl(var(--gray-9));
+  --color-gray-ring: hsl(var(--gray-7));
+
+  --color-orange: hsl(var(--orange-9));
+  --color-orange-base: hsl(var(--orange-1));
+  --color-orange-elevation-1: hsl(var(--orange-2));
+  --color-orange-elevation-1-hover: hsl(var(--orange-3));
+  --color-orange-elevation-1-border: hsl(var(--orange-5));
+  --color-orange-elevation-1-border-hover: hsl(var(--orange-6));
+  --color-orange-elevation-2: hsl(var(--orange-3));
+  --color-orange-elevation-2-hover: hsl(var(--orange-4));
+  --color-orange-elevation-2-border: hsl(var(--orange-6));
+  --color-orange-elevation-2-border-hover: hsl(var(--orange-7));
+  --color-orange-elevation-3: hsl(var(--orange-4));
+  --color-orange-elevation-3-hover: hsl(var(--orange-5));
+  --color-orange-elevation-3-border: hsl(var(--orange-7));
+  --color-orange-elevation-3-border-hover: hsl(var(--orange-8));
+  --color-orange-elevation-4: hsl(var(--orange-5));
+  --color-orange-elevation-4-hover: hsl(var(--orange-6));
+  --color-orange-elevation-4-border: hsl(var(--orange-8));
+  --color-orange-elevation-4-border-hover: hsl(var(--orange-9));
+  --color-orange-text-primary: hsl(var(--orange-11));
+  --color-orange-text-primary-hover: hsl(var(--orange-12));
+  --color-orange-text-secondary: hsl(var(--orange-10));
+  --color-orange-text-secondary-hover: hsl(var(--orange-11));
+  --color-orange-text-tertiary: hsl(var(--orange-9));
+  --color-orange-text-tertiary-hover: hsl(var(--orange-10));
+  --color-orange-text-quaternary: hsl(var(--orange-8));
+  --color-orange-text-quaternary-hover: hsl(var(--orange-9));
+  --color-orange-ring: hsl(var(--orange-7));
+
+  --color-green: hsl(var(--green-9));
+  --color-green-base: hsl(var(--green-1));
+  --color-green-elevation-1: hsl(var(--green-2));
+  --color-green-elevation-1-hover: hsl(var(--green-3));
+  --color-green-elevation-1-border: hsl(var(--green-5));
+  --color-green-elevation-1-border-hover: hsl(var(--green-6));
+  --color-green-elevation-2: hsl(var(--green-3));
+  --color-green-elevation-2-hover: hsl(var(--green-4));
+  --color-green-elevation-2-border: hsl(var(--green-6));
+  --color-green-elevation-2-border-hover: hsl(var(--green-7));
+  --color-green-elevation-3: hsl(var(--green-4));
+  --color-green-elevation-3-hover: hsl(var(--green-5));
+  --color-green-elevation-3-border: hsl(var(--green-7));
+  --color-green-elevation-3-border-hover: hsl(var(--green-8));
+  --color-green-elevation-4: hsl(var(--green-5));
+  --color-green-elevation-4-hover: hsl(var(--green-6));
+  --color-green-elevation-4-border: hsl(var(--green-8));
+  --color-green-elevation-4-border-hover: hsl(var(--green-9));
+  --color-green-text-primary: hsl(var(--green-11));
+  --color-green-text-primary-hover: hsl(var(--green-12));
+  --color-green-text-secondary: hsl(var(--green-10));
+  --color-green-text-secondary-hover: hsl(var(--green-11));
+  --color-green-text-tertiary: hsl(var(--green-9));
+  --color-green-text-tertiary-hover: hsl(var(--green-10));
+  --color-green-text-quaternary: hsl(var(--green-8));
+  --color-green-text-quaternary-hover: hsl(var(--green-9));
+  --color-green-ring: hsl(var(--green-7));
+
+  --color-red: hsl(var(--red-9));
+  --color-red-base: hsl(var(--red-1));
+  --color-red-elevation-1: hsl(var(--red-2));
+  --color-red-elevation-1-hover: hsl(var(--red-3));
+  --color-red-elevation-1-border: hsl(var(--red-5));
+  --color-red-elevation-1-border-hover: hsl(var(--red-6));
+  --color-red-elevation-2: hsl(var(--red-3));
+  --color-red-elevation-2-hover: hsl(var(--red-4));
+  --color-red-elevation-2-border: hsl(var(--red-6));
+  --color-red-elevation-2-border-hover: hsl(var(--red-7));
+  --color-red-elevation-3: hsl(var(--red-4));
+  --color-red-elevation-3-hover: hsl(var(--red-5));
+  --color-red-elevation-3-border: hsl(var(--red-7));
+  --color-red-elevation-3-border-hover: hsl(var(--red-8));
+  --color-red-elevation-4: hsl(var(--red-5));
+  --color-red-elevation-4-hover: hsl(var(--red-6));
+  --color-red-elevation-4-border: hsl(var(--red-8));
+  --color-red-elevation-4-border-hover: hsl(var(--red-9));
+  --color-red-text-primary: hsl(var(--red-11));
+  --color-red-text-primary-hover: hsl(var(--red-12));
+  --color-red-text-secondary: hsl(var(--red-10));
+  --color-red-text-secondary-hover: hsl(var(--red-11));
+  --color-red-text-tertiary: hsl(var(--red-9));
+  --color-red-text-tertiary-hover: hsl(var(--red-10));
+  --color-red-text-quaternary: hsl(var(--red-8));
+  --color-red-text-quaternary-hover: hsl(var(--red-9));
+  --color-red-ring: hsl(var(--red-7));
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  @media (width >= --theme(--breakpoint-sm)) {
+    max-width: none;
+  }
+  @media (width >= 1400px) {
+    max-width: 1400px;
+  }
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@utility text-balance {
+  text-wrap: balance;
+}
 
 @layer base {
   :root {
@@ -112,24 +262,18 @@
   }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
 @layer base {
   * {
-    @apply border-border outline-none;
+    @apply border-border outline-hidden;
   }
   body {
     @apply bg-background text-foreground text-sm font-medium antialiased;
     font-family: Arial, Helvetica, sans-serif;
   }
   button {
-    @apply outline-none;
+    @apply outline-hidden;
   }
   input {
-    @apply outline-none;
+    @apply outline-hidden;
   }
 }

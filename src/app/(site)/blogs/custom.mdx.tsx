@@ -76,7 +76,7 @@ export const MDXComponents = {
       {...props}
       className={cn(
         className as string,
-        'relative inline-flex items-center justify-center bg-gradient-to-br from-orange-text-primary to-red-text-primary bg-clip-text font-medium text-transparent before:absolute before:bottom-0 before:h-px before:w-full before:rounded-full before:bg-gradient-to-br before:from-orange-text-primary before:to-red-text-primary hover:opacity-90',
+        'relative inline-flex items-center justify-center bg-linear-to-br from-orange-text-primary to-red-text-primary bg-clip-text font-medium text-transparent before:absolute before:bottom-0 before:h-px before:w-full before:rounded-full before:bg-linear-to-br before:from-orange-text-primary before:to-red-text-primary hover:opacity-90',
       )}
       target="_blank"
       rel="noopener noreferrer"
@@ -89,7 +89,7 @@ export const MDXComponents = {
       {...props}
       className={cn(
         className as string,
-        'mb-3 text-sm font-normal !leading-6 md:mb-4 md:text-base md:!leading-7',
+        'mb-3 text-sm font-normal leading-6! md:mb-4 md:text-base md:leading-7!',
       )}
     >
       {children}

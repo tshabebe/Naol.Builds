@@ -70,7 +70,7 @@ function CallToAction() {
   return (
     <Button
       className={
-        'hidden gap-2 rounded-2xl bg-gradient-to-r from-orange-text-secondary to-red px-4 py-2 shadow-md shadow-[#0C0909] sm:flex dark:text-black'
+        'hidden gap-2 rounded-2xl bg-linear-to-r from-orange-text-secondary to-red px-4 py-2 shadow-md shadow-[#0C0909] sm:flex dark:text-black'
       }
     >
       <Link href={paths.auth.register.getHref()} className="flex gap-2">

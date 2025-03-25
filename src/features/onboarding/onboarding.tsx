@@ -67,7 +67,7 @@ function CreateClass() {
     >
       <Button
         className={
-          'rounded-md bg-gradient-to-r from-orange to-red py-1.5 font-bold text-gray-base'
+          'rounded-md bg-linear-to-r from-orange to-red py-1.5 font-bold text-gray-base'
         }
       >
         Create Class
@@ -214,7 +214,7 @@ function CreateClassOnboarding() {
       <Button
         type="submit"
         className={
-          'rounded-md bg-gradient-to-r from-orange to-red py-1.5 font-bold text-gray-base'
+          'rounded-md bg-linear-to-r from-orange to-red py-1.5 font-bold text-gray-base'
         }
         isPending={createClass.isPending}
         isDisabled={createClass.isPending}

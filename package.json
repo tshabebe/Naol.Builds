@@ -92,6 +92,7 @@
     "@ianvs/prettier-plugin-sort-imports": "^4.4.0",
     "@next/eslint-plugin-next": "15.0.4",
     "@svgr/webpack": "^8.1.0",
+    "@tailwindcss/postcss": "^4.0.14",
     "@total-typescript/ts-reset": "^0.6.1",
     "@types/eslint": "^9.6.1",
     "@types/eslint-config-prettier": "^6.11.3",
@@ -116,7 +117,7 @@
     "prettier": "^3.4.2",
     "prettier-plugin-curly": "^0.2.2",
     "prettier-plugin-packagejson": "^2.5.6",
-    "tailwindcss": "^3.4.17",
+    "tailwindcss": "^4.0.14",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "^5.7.2",
     "typescript-eslint": "^8.18.1"

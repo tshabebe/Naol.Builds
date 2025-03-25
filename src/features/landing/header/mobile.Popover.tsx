@@ -73,7 +73,7 @@ export function MobilePopover() {
                 href={role.href}
                 className={({ isFocused }) =>
                   cn(
-                    'cursor-pointer p-2 outline-none',
+                    'cursor-pointer p-2 outline-hidden',
                     isFocused && 'bg-gray-elevation-1-hover',
                     pathname === role.href && 'bg-gray-elevation-3',
                   )

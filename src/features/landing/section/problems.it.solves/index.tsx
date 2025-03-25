@@ -20,7 +20,7 @@ function Without() {
   return (
     <div className="flex flex-col items-center gap-6 sm:flex sm:flex-row lg:gap-2">
       <div className="flex flex-col items-center">
-        <NoteIcon className="h-[108] w-[98] lg:h-[189] lg:w-[173]" />
+        <NoteIcon className="h-108 w-98 lg:h-189 lg:w-173" />
         <h3 className="max-w-[20ch] text-center text-xl font-bold text-orange-text-primary lg:text-3xl">
           ugly and Inconsistent writing
         </h3>
@@ -30,7 +30,7 @@ function Without() {
       </div>
       <ArrowIcon />
       <div className="flex flex-col items-center">
-        <TimeIcon className="h-[108] w-[104] lg:h-[193] lg:w-[187]" />
+        <TimeIcon className="h-108 w-104 lg:h-193 lg:w-187" />
         <h3 className="max-w-[20ch] text-center text-xl font-bold text-orange-text-primary lg:text-3xl">
           Schedules Overlapping
         </h3>
@@ -40,7 +40,7 @@ function Without() {
       </div>
       <ArrowIcon />
       <div className="flex flex-col items-center">
-        <SlowIcon className="h-[102] w-[108] lg:h-[192] lg:w-[200]" />
+        <SlowIcon className="h-102 w-108 lg:h-192 lg:w-200" />
         <h3 className="max-w-[20ch] text-center text-xl font-bold text-orange-text-primary lg:text-3xl">
           ugly and Inconsistent writing
         </h3>

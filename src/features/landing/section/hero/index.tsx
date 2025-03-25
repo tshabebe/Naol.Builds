@@ -20,7 +20,7 @@ export default function Hero() {
       </p>
       <Button
         className={
-          'flex items-center gap-2 rounded-full bg-gradient-to-r from-orange-text-secondary to-red px-8 py-2 font-bold text-background shadow-md shadow-[#0C0909]'
+          'flex items-center gap-2 rounded-full bg-linear-to-r from-orange-text-secondary to-red px-8 py-2 font-bold text-background shadow-md shadow-[#0C0909]'
         }
       >
         <Link href={paths.auth.register.getHref()} className="flex gap-2">

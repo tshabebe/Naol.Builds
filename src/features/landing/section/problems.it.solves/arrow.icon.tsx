@@ -3,7 +3,7 @@ import React from 'react';
 function ArrowIcon() {
   return (
     <svg
-      className="hidden h-[17] w-[100] rotate-90 lg:block lg:h-[27] lg:w-[154] lg:rotate-0"
+      className="hidden h-17 w-100 rotate-90 lg:block lg:h-27 lg:w-154 lg:rotate-0"
       viewBox="0 0 154 27"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

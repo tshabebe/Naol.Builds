@@ -45,7 +45,7 @@ const social = [
 
 function Footer() {
   return (
-    <footer className="flex flex-col items-center gap-6 border-t bg-gradient-to-b from-background to-orange-elevation-1 p-24">
+    <footer className="flex flex-col items-center gap-6 border-t bg-linear-to-b from-background to-orange-elevation-1 p-24">
       <ListBox items={main} className={'flex gap-10'}>
         {(item) => (
           <ListBoxItem

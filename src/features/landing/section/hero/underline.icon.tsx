@@ -3,7 +3,7 @@ function UnderLineIcon() {
     <svg
       width="415"
       height="9"
-      className="h-[5] w-[266] md:h-[7] md:w-[340] lg:h-9 lg:w-[415]"
+      className="h-5 w-266 md:h-7 md:w-340 lg:h-9 lg:w-415"
       viewBox="0 0 415 9"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
