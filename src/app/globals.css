@@ -1,133 +1,136 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --color-background: hsl(var(--gray-1));
-  --color-foreground: hsl(var(--gray-11));
-  --color-border: hsl(var(--gray-6));
-  --color-border-hover: hsl(var(--gray-7));
+	--color-background: hsl(var(--gray-1));
+	--color-foreground: hsl(var(--gray-11));
+	--color-border: hsl(var(--gray-6));
+	--color-border-hover: hsl(var(--gray-7));
 
-  --color-gray: hsl(var(--gray-9));
-  --color-gray-base: hsl(var(--gray-1));
-  --color-gray-elevation-1: hsl(var(--gray-2));
-  --color-gray-elevation-1-hover: hsl(var(--gray-3));
-  --color-gray-elevation-1-border: hsl(var(--gray-5));
-  --color-gray-elevation-1-border-hover: hsl(var(--gray-6));
-  --color-gray-elevation-2: hsl(var(--gray-3));
-  --color-gray-elevation-2-hover: hsl(var(--gray-4));
-  --color-gray-elevation-2-border: hsl(var(--gray-6));
-  --color-gray-elevation-2-border-hover: hsl(var(--gray-7));
-  --color-gray-elevation-3: hsl(var(--gray-4));
-  --color-gray-elevation-3-hover: hsl(var(--gray-5));
-  --color-gray-elevation-3-border: hsl(var(--gray-7));
-  --color-gray-elevation-3-border-hover: hsl(var(--gray-8));
-  --color-gray-elevation-4: hsl(var(--gray-5));
-  --color-gray-elevation-4-hover: hsl(var(--gray-6));
-  --color-gray-elevation-4-border: hsl(var(--gray-8));
-  --color-gray-elevation-4-border-hover: hsl(var(--gray-9));
-  --color-gray-text-primary: hsl(var(--gray-11));
-  --color-gray-text-primary-hover: hsl(var(--gray-12));
-  --color-gray-text-secondary: hsl(var(--gray-10));
-  --color-gray-text-secondary-hover: hsl(var(--gray-11));
-  --color-gray-text-tertiary: hsl(var(--gray-9));
-  --color-gray-text-tertiary-hover: hsl(var(--gray-10));
-  --color-gray-text-quaternary: hsl(var(--gray-8));
-  --color-gray-text-quaternary-hover: hsl(var(--gray-9));
-  --color-gray-ring: hsl(var(--gray-7));
+	--color-gray: hsl(var(--gray-9));
+	--color-gray-base: hsl(var(--gray-1));
+	--color-gray-elevation-1: hsl(var(--gray-2));
+	--color-gray-elevation-1-hover: hsl(var(--gray-3));
+	--color-gray-elevation-1-border: hsl(var(--gray-5));
+	--color-gray-elevation-1-border-hover: hsl(var(--gray-6));
+	--color-gray-elevation-2: hsl(var(--gray-3));
+	--color-gray-elevation-2-hover: hsl(var(--gray-4));
+	--color-gray-elevation-2-border: hsl(var(--gray-6));
+	--color-gray-elevation-2-border-hover: hsl(var(--gray-7));
+	--color-gray-elevation-3: hsl(var(--gray-4));
+	--color-gray-elevation-3-hover: hsl(var(--gray-5));
+	--color-gray-elevation-3-border: hsl(var(--gray-7));
+	--color-gray-elevation-3-border-hover: hsl(var(--gray-8));
+	--color-gray-elevation-4: hsl(var(--gray-5));
+	--color-gray-elevation-4-hover: hsl(var(--gray-6));
+	--color-gray-elevation-4-border: hsl(var(--gray-8));
+	--color-gray-elevation-4-border-hover: hsl(var(--gray-9));
+	--color-gray-text-primary: hsl(var(--gray-11));
+	--color-gray-text-primary-hover: hsl(var(--gray-12));
+	--color-gray-text-secondary: hsl(var(--gray-10));
+	--color-gray-text-secondary-hover: hsl(var(--gray-11));
+	--color-gray-text-tertiary: hsl(var(--gray-9));
+	--color-gray-text-tertiary-hover: hsl(var(--gray-10));
+	--color-gray-text-quaternary: hsl(var(--gray-8));
+	--color-gray-text-quaternary-hover: hsl(var(--gray-9));
+	--color-gray-ring: hsl(var(--gray-7));
 
-  --color-orange: hsl(var(--orange-9));
-  --color-orange-base: hsl(var(--orange-1));
-  --color-orange-elevation-1: hsl(var(--orange-2));
-  --color-orange-elevation-1-hover: hsl(var(--orange-3));
-  --color-orange-elevation-1-border: hsl(var(--orange-5));
-  --color-orange-elevation-1-border-hover: hsl(var(--orange-6));
-  --color-orange-elevation-2: hsl(var(--orange-3));
-  --color-orange-elevation-2-hover: hsl(var(--orange-4));
-  --color-orange-elevation-2-border: hsl(var(--orange-6));
-  --color-orange-elevation-2-border-hover: hsl(var(--orange-7));
-  --color-orange-elevation-3: hsl(var(--orange-4));
-  --color-orange-elevation-3-hover: hsl(var(--orange-5));
-  --color-orange-elevation-3-border: hsl(var(--orange-7));
-  --color-orange-elevation-3-border-hover: hsl(var(--orange-8));
-  --color-orange-elevation-4: hsl(var(--orange-5));
-  --color-orange-elevation-4-hover: hsl(var(--orange-6));
-  --color-orange-elevation-4-border: hsl(var(--orange-8));
-  --color-orange-elevation-4-border-hover: hsl(var(--orange-9));
-  --color-orange-text-primary: hsl(var(--orange-11));
-  --color-orange-text-primary-hover: hsl(var(--orange-12));
-  --color-orange-text-secondary: hsl(var(--orange-10));
-  --color-orange-text-secondary-hover: hsl(var(--orange-11));
-  --color-orange-text-tertiary: hsl(var(--orange-9));
-  --color-orange-text-tertiary-hover: hsl(var(--orange-10));
-  --color-orange-text-quaternary: hsl(var(--orange-8));
-  --color-orange-text-quaternary-hover: hsl(var(--orange-9));
-  --color-orange-ring: hsl(var(--orange-7));
+	--color-orange: hsl(var(--orange-9));
+	--color-orange-base: hsl(var(--orange-1));
+	--color-orange-elevation-1: hsl(var(--orange-2));
+	--color-orange-elevation-1-hover: hsl(var(--orange-3));
+	--color-orange-elevation-1-border: hsl(var(--orange-5));
+	--color-orange-elevation-1-border-hover: hsl(var(--orange-6));
+	--color-orange-elevation-2: hsl(var(--orange-3));
+	--color-orange-elevation-2-hover: hsl(var(--orange-4));
+	--color-orange-elevation-2-border: hsl(var(--orange-6));
+	--color-orange-elevation-2-border-hover: hsl(var(--orange-7));
+	--color-orange-elevation-3: hsl(var(--orange-4));
+	--color-orange-elevation-3-hover: hsl(var(--orange-5));
+	--color-orange-elevation-3-border: hsl(var(--orange-7));
+	--color-orange-elevation-3-border-hover: hsl(var(--orange-8));
+	--color-orange-elevation-4: hsl(var(--orange-5));
+	--color-orange-elevation-4-hover: hsl(var(--orange-6));
+	--color-orange-elevation-4-border: hsl(var(--orange-8));
+	--color-orange-elevation-4-border-hover: hsl(var(--orange-9));
+	--color-orange-text-primary: hsl(var(--orange-11));
+	--color-orange-text-primary-hover: hsl(var(--orange-12));
+	--color-orange-text-secondary: hsl(var(--orange-10));
+	--color-orange-text-secondary-hover: hsl(var(--orange-11));
+	--color-orange-text-tertiary: hsl(var(--orange-9));
+	--color-orange-text-tertiary-hover: hsl(var(--orange-10));
+	--color-orange-text-quaternary: hsl(var(--orange-8));
+	--color-orange-text-quaternary-hover: hsl(var(--orange-9));
+	--color-orange-ring: hsl(var(--orange-7));
+	--color-orange-border: hsl(var(--orange-6));
 
-  --color-green: hsl(var(--green-9));
-  --color-green-base: hsl(var(--green-1));
-  --color-green-elevation-1: hsl(var(--green-2));
-  --color-green-elevation-1-hover: hsl(var(--green-3));
-  --color-green-elevation-1-border: hsl(var(--green-5));
-  --color-green-elevation-1-border-hover: hsl(var(--green-6));
-  --color-green-elevation-2: hsl(var(--green-3));
-  --color-green-elevation-2-hover: hsl(var(--green-4));
-  --color-green-elevation-2-border: hsl(var(--green-6));
-  --color-green-elevation-2-border-hover: hsl(var(--green-7));
-  --color-green-elevation-3: hsl(var(--green-4));
-  --color-green-elevation-3-hover: hsl(var(--green-5));
-  --color-green-elevation-3-border: hsl(var(--green-7));
-  --color-green-elevation-3-border-hover: hsl(var(--green-8));
-  --color-green-elevation-4: hsl(var(--green-5));
-  --color-green-elevation-4-hover: hsl(var(--green-6));
-  --color-green-elevation-4-border: hsl(var(--green-8));
-  --color-green-elevation-4-border-hover: hsl(var(--green-9));
-  --color-green-text-primary: hsl(var(--green-11));
-  --color-green-text-primary-hover: hsl(var(--green-12));
-  --color-green-text-secondary: hsl(var(--green-10));
-  --color-green-text-secondary-hover: hsl(var(--green-11));
-  --color-green-text-tertiary: hsl(var(--green-9));
-  --color-green-text-tertiary-hover: hsl(var(--green-10));
-  --color-green-text-quaternary: hsl(var(--green-8));
-  --color-green-text-quaternary-hover: hsl(var(--green-9));
-  --color-green-ring: hsl(var(--green-7));
+	--color-green: hsl(var(--green-9));
+	--color-green-base: hsl(var(--green-1));
+	--color-green-elevation-1: hsl(var(--green-2));
+	--color-green-elevation-1-hover: hsl(var(--green-3));
+	--color-green-elevation-1-border: hsl(var(--green-5));
+	--color-green-elevation-1-border-hover: hsl(var(--green-6));
+	--color-green-elevation-2: hsl(var(--green-3));
+	--color-green-elevation-2-hover: hsl(var(--green-4));
+	--color-green-elevation-2-border: hsl(var(--green-6));
+	--color-green-elevation-2-border-hover: hsl(var(--green-7));
+	--color-green-elevation-3: hsl(var(--green-4));
+	--color-green-elevation-3-hover: hsl(var(--green-5));
+	--color-green-elevation-3-border: hsl(var(--green-7));
+	--color-green-elevation-3-border-hover: hsl(var(--green-8));
+	--color-green-elevation-4: hsl(var(--green-5));
+	--color-green-elevation-4-hover: hsl(var(--green-6));
+	--color-green-elevation-4-border: hsl(var(--green-8));
+	--color-green-elevation-4-border-hover: hsl(var(--green-9));
+	--color-green-text-primary: hsl(var(--green-11));
+	--color-green-text-primary-hover: hsl(var(--green-12));
+	--color-green-text-secondary: hsl(var(--green-10));
+	--color-green-text-secondary-hover: hsl(var(--green-11));
+	--color-green-text-tertiary: hsl(var(--green-9));
+	--color-green-text-tertiary-hover: hsl(var(--green-10));
+	--color-green-text-quaternary: hsl(var(--green-8));
+	--color-green-text-quaternary-hover: hsl(var(--green-9));
+	--color-green-ring: hsl(var(--green-7));
+	--color-green-border: hsl(var(--green-6));
 
-  --color-red: hsl(var(--red-9));
-  --color-red-base: hsl(var(--red-1));
-  --color-red-elevation-1: hsl(var(--red-2));
-  --color-red-elevation-1-hover: hsl(var(--red-3));
-  --color-red-elevation-1-border: hsl(var(--red-5));
-  --color-red-elevation-1-border-hover: hsl(var(--red-6));
-  --color-red-elevation-2: hsl(var(--red-3));
-  --color-red-elevation-2-hover: hsl(var(--red-4));
-  --color-red-elevation-2-border: hsl(var(--red-6));
-  --color-red-elevation-2-border-hover: hsl(var(--red-7));
-  --color-red-elevation-3: hsl(var(--red-4));
-  --color-red-elevation-3-hover: hsl(var(--red-5));
-  --color-red-elevation-3-border: hsl(var(--red-7));
-  --color-red-elevation-3-border-hover: hsl(var(--red-8));
-  --color-red-elevation-4: hsl(var(--red-5));
-  --color-red-elevation-4-hover: hsl(var(--red-6));
-  --color-red-elevation-4-border: hsl(var(--red-8));
-  --color-red-elevation-4-border-hover: hsl(var(--red-9));
-  --color-red-text-primary: hsl(var(--red-11));
-  --color-red-text-primary-hover: hsl(var(--red-12));
-  --color-red-text-secondary: hsl(var(--red-10));
-  --color-red-text-secondary-hover: hsl(var(--red-11));
-  --color-red-text-tertiary: hsl(var(--red-9));
-  --color-red-text-tertiary-hover: hsl(var(--red-10));
-  --color-red-text-quaternary: hsl(var(--red-8));
-  --color-red-text-quaternary-hover: hsl(var(--red-9));
-  --color-red-ring: hsl(var(--red-7));
+	--color-red: hsl(var(--red-9));
+	--color-red-base: hsl(var(--red-1));
+	--color-red-elevation-1: hsl(var(--red-2));
+	--color-red-elevation-1-hover: hsl(var(--red-3));
+	--color-red-elevation-1-border: hsl(var(--red-5));
+	--color-red-elevation-1-border-hover: hsl(var(--red-6));
+	--color-red-elevation-2: hsl(var(--red-3));
+	--color-red-elevation-2-hover: hsl(var(--red-4));
+	--color-red-elevation-2-border: hsl(var(--red-6));
+	--color-red-elevation-2-border-hover: hsl(var(--red-7));
+	--color-red-elevation-3: hsl(var(--red-4));
+	--color-red-elevation-3-hover: hsl(var(--red-5));
+	--color-red-elevation-3-border: hsl(var(--red-7));
+	--color-red-elevation-3-border-hover: hsl(var(--red-8));
+	--color-red-elevation-4: hsl(var(--red-5));
+	--color-red-elevation-4-hover: hsl(var(--red-6));
+	--color-red-elevation-4-border: hsl(var(--red-8));
+	--color-red-elevation-4-border-hover: hsl(var(--red-9));
+	--color-red-text-primary: hsl(var(--red-11));
+	--color-red-text-primary-hover: hsl(var(--red-12));
+	--color-red-text-secondary: hsl(var(--red-10));
+	--color-red-text-secondary-hover: hsl(var(--red-11));
+	--color-red-text-tertiary: hsl(var(--red-9));
+	--color-red-text-tertiary-hover: hsl(var(--red-10));
+	--color-red-text-quaternary: hsl(var(--red-8));
+	--color-red-text-quaternary-hover: hsl(var(--red-9));
+	--color-red-ring: hsl(var(--red-7));
+	--color-red-border: hsl(var(--red-6));
 }
 
 @utility container {
-  margin-inline: auto;
-  padding-inline: 1.5rem;
-  @media (width >= --theme(--breakpoint-sm)) {
-    max-width: none;
-  }
-  @media (width >= 1400px) {
-    max-width: 1400px;
-  }
+	margin-inline: auto;
+	padding-inline: 1.5rem;
+	@media (width >= --theme(--breakpoint-sm)) {
+		max-width: none;
+	}
+	@media (width >= 1400px) {
+		max-width: 1400px;
+	}
 }
 
 /*
@@ -139,141 +142,141 @@
   color utility to any element that depends on these defaults.
 */
 @layer base {
-  *,
-  ::after,
-  ::before,
-  ::backdrop,
-  ::file-selector-button {
-    border-color: var(--color-gray-200, currentColor);
-  }
+	*,
+	::after,
+	::before,
+	::backdrop,
+	::file-selector-button {
+		border-color: var(--color-gray-200, currentColor);
+	}
 }
 
 @utility text-balance {
-  text-wrap: balance;
+	text-wrap: balance;
 }
 
 @layer base {
-  :root {
-    --gray-1: 15 15% 95%;
-    --gray-2: 18 12% 94%;
-    --gray-3: 21 9% 93%;
-    --gray-4: 24 6% 91%;
-    --gray-5: 27 3% 87%;
-    --gray-6: 15 0% 82%;
-    --gray-7: 15 0% 76%;
-    --gray-8: 18 12% 62%;
-    --gray-9: 21 9% 57%;
-    --gray-10: 24 6% 46%;
-    --gray-11: 27 3% 28%;
-    --gray-12: 15 0% 12%;
+	:root {
+		--gray-1: 15 15% 95%;
+		--gray-2: 18 12% 94%;
+		--gray-3: 21 9% 93%;
+		--gray-4: 24 6% 91%;
+		--gray-5: 27 3% 87%;
+		--gray-6: 15 0% 82%;
+		--gray-7: 15 0% 76%;
+		--gray-8: 18 12% 62%;
+		--gray-9: 21 9% 57%;
+		--gray-10: 24 6% 46%;
+		--gray-11: 27 3% 28%;
+		--gray-12: 15 0% 12%;
 
-    --orange-1: 17, 20%, 93%;
-    --orange-2: 20, 25%, 91%;
-    --orange-3: 21, 42%, 86%;
-    --orange-4: 21, 66%, 84%;
-    --orange-5: 21, 59%, 80%;
-    --orange-6: 20, 47%, 74%;
-    --orange-7: 20, 42%, 67%;
-    --orange-8: 20, 42%, 57%;
-    --orange-9: 20.5 80.2% 40;
-    --orange-10: 21, 71%, 45%;
-    --orange-11: 20, 100%, 27%;
-    --orange-12: 19, 100%, 9%;
+		--orange-1: 17, 20%, 93%;
+		--orange-2: 20, 25%, 91%;
+		--orange-3: 21, 42%, 86%;
+		--orange-4: 21, 66%, 84%;
+		--orange-5: 21, 59%, 80%;
+		--orange-6: 20, 47%, 74%;
+		--orange-7: 20, 42%, 67%;
+		--orange-8: 20, 42%, 57%;
+		--orange-9: 20.5 80.2% 40;
+		--orange-10: 21, 71%, 45%;
+		--orange-11: 20, 100%, 27%;
+		--orange-12: 19, 100%, 9%;
 
-    --green-1: 100 27% 95%;
-    --green-2: 100 16% 92%;
-    --green-3: 100 26% 87%;
-    --green-4: 100 39% 84%;
-    --green-5: 100 39% 80%;
-    --green-6: 100 39% 76%;
-    --green-7: 100 39% 70%;
-    --green-8: 100 39% 66%;
-    --green-9: 100 55% 40%;
-    --green-10: 100 50% 44%;
-    --green-11: 100 54% 41%;
-    --green-12: 100 67% 18%;
+		--green-1: 140 27% 95%;
+		--green-2: 140 16% 92%;
+		--green-3: 140 26% 87%;
+		--green-4: 140 39% 84%;
+		--green-5: 140 39% 80%;
+		--green-6: 140 39% 76%;
+		--green-7: 140 39% 70%;
+		--green-8: 140 39% 66%;
+		--green-9: 140 55% 40%;
+		--green-10: 140 50% 44%;
+		--green-11: 140 54% 41%;
+		--green-12: 140 67% 18%;
 
-    --red-1: 0 100% 99%;
-    --red-2: 7, 100%, 98%;
-    --red-3: 10, 92%, 95%;
-    --red-4: 12, 100%, 91%;
-    --red-5: 11, 100%, 88%;
-    --red-6: 11, 95%, 84%;
-    --red-7: 10, 82%, 78%;
-    --red-8: 10, 75%, 70%;
-    --red-9: 10, 78%, 54%;
-    --red-10: 10, 73%, 51%;
-    --red-11: 10, 82%, 45%;
-    --red-12: 8, 50%, 24%;
-  }
+		--red-1: 0 100% 99%;
+		--red-2: 7, 100%, 98%;
+		--red-3: 10, 92%, 95%;
+		--red-4: 12, 100%, 91%;
+		--red-5: 11, 100%, 88%;
+		--red-6: 11, 95%, 84%;
+		--red-7: 10, 82%, 78%;
+		--red-8: 10, 75%, 70%;
+		--red-9: 10, 78%, 54%;
+		--red-10: 10, 73%, 51%;
+		--red-11: 10, 82%, 45%;
+		--red-12: 8, 50%, 24%;
+	}
 
-  .dark {
-    --gray-1: 15 15% 5%;
-    --gray-2: 18 12% 6%;
-    --gray-3: 21 9% 7%;
-    --gray-4: 24 6% 9%;
-    --gray-5: 27 3% 13%;
-    --gray-6: 20 0% 18%;
-    --gray-7: 20 0% 24%;
-    --gray-8: 18 12% 38%;
-    --gray-9: 21 9% 43%;
-    --gray-10: 24 6% 54%;
-    --gray-11: 27 3% 72%;
-    --gray-12: 60 0% 84%;
+	.dark {
+		--gray-1: 150 6% 4%;
+		--gray-2: 150 4% 9%;
+		--gray-3: 150 3% 13%;
+		--gray-4: 160 4% 16%;
+		--gray-5: 160 3% 19%;
+		--gray-6: 150 4% 22%;
+		--gray-7: 156 4% 28%;
+		--gray-8: 154 4% 37%;
+		--gray-9: 157 6% 41%;
+		--gray-10: 160 5% 47%;
+		--gray-11: 157 5% 69%;
+		--gray-12: 150 6% 93%;
 
-    --orange-1: 17, 20%, 7%;
-    --orange-2: 20, 25%, 9%;
-    --orange-3: 21, 42%, 14%;
-    --orange-4: 21, 66%, 16%;
-    --orange-5: 21, 59%, 20%;
-    --orange-6: 20, 47%, 26%;
-    --orange-7: 20, 42%, 33%;
-    --orange-8: 20, 42%, 43%;
-    --orange-9: 21, 71%, 55%;
-    --orange-10: 20.5 80.2% 60.2%;
-    --orange-11: 20, 100%, 73%;
-    --orange-12: 19, 100%, 91%;
+		--orange-1: 17, 20%, 7%;
+		--orange-2: 20, 25%, 9%;
+		--orange-3: 21, 42%, 14%;
+		--orange-4: 21, 66%, 16%;
+		--orange-5: 21, 59%, 20%;
+		--orange-6: 20, 47%, 26%;
+		--orange-7: 20, 42%, 33%;
+		--orange-8: 20, 42%, 43%;
+		--orange-9: 21, 71%, 55%;
+		--orange-10: 20.5 80.2% 60.2%;
+		--orange-11: 20, 100%, 73%;
+		--orange-12: 19, 100%, 91%;
 
-    --green-1: 100 27% 5%;
-    --green-2: 100 16% 8%;
-    --green-3: 100 26% 13%;
-    --green-4: 100 39% 16%;
-    --green-5: 100 39% 20%;
-    --green-6: 100 39% 24%;
-    --green-7: 100 39% 30%;
-    --green-8: 100 39% 34%;
-    --green-9: 100 55% 60%;
-    --green-10: 100 50% 56%;
-    --green-11: 100 54% 59%;
-    --green-12: 100 67% 82%;
+		--green-1: 140 27% 5%;
+		--green-2: 140 16% 8%;
+		--green-3: 140 26% 13%;
+		--green-4: 140 39% 16%;
+		--green-5: 140 39% 20%;
+		--green-6: 140 39% 24%;
+		--green-7: 140 39% 30%;
+		--green-8: 140 39% 34%;
+		--green-9: 140 55% 60%;
+		--green-10: 140 50% 56%;
+		--green-11: 140 87% 69%;
+		--green-12: 140 67% 82%;
 
-    --red-1: 0, 17%, 8%;
-    --red-2: 10, 24%, 10%;
-    --red-3: 5, 48%, 15%;
-    --red-4: 4, 64%, 19%;
-    --red-5: 5, 62%, 23%;
-    --red-6: 7, 55%, 28%;
-    --red-7: 9, 49%, 35%;
-    --red-8: 10, 50%, 45%;
-    --red-9: 10, 78%, 54%;
-    --red-10: 11, 82%, 59%;
-    --red-11: 12, 100%, 75%;
-    --red-12: 10, 86%, 89%;
-  }
+		--red-1: 0, 17%, 8%;
+		--red-2: 10, 24%, 10%;
+		--red-3: 5, 48%, 15%;
+		--red-4: 4, 64%, 19%;
+		--red-5: 5, 62%, 23%;
+		--red-6: 7, 55%, 28%;
+		--red-7: 9, 49%, 35%;
+		--red-8: 10, 50%, 45%;
+		--red-9: 10, 78%, 54%;
+		--red-10: 11, 82%, 59%;
+		--red-11: 12, 100%, 75%;
+		--red-12: 10, 86%, 89%;
+	}
 }
 
 @layer base {
-  * {
-    @apply border-border outline-hidden;
-  }
-  body {
-    @apply bg-background text-foreground text-sm font-medium antialiased;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  button {
-    @apply outline-hidden;
-  }
-  input {
-    @apply outline-hidden;
-  }
+	* {
+		@apply border-border outline-hidden;
+	}
+	body {
+		@apply bg-background text-foreground text-sm font-medium antialiased;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	button {
+		@apply outline-hidden;
+	}
+	input {
+		@apply outline-hidden;
+	}
 }
