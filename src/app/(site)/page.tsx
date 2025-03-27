@@ -2,12 +2,14 @@ import {
 	InstagramIcon,
 	LinkedInIcon,
 	TelegramIcon,
+	ToolsUsedCircleIcon,
 	TwitterIcon,
 } from "@/Icons";
 import { checkLoggedIn } from "@/auth/auth";
 import { paths } from "@/config/paths";
 import Button from "@/primitives/button";
 import { Icon } from "@/primitives/icon";
+import Image from "next/image";
 import { redirect } from "next/navigation";
 
 async function LandingPage() {
@@ -16,9 +18,11 @@ async function LandingPage() {
 		redirect(paths.app.dashboard.getHref());
 	}
 	return (
-		<main className="flex min-h-screen w-full container">
+		<main className="flex w-full container">
 			<HeroText />
-			<div className="flex items-center justify-center">Tools Used</div>
+			<div className="py-14">
+				<ToolsUsedCircleIcon />
+			</div>
 		</main>
 	);
 }
@@ -27,16 +31,17 @@ export default LandingPage;
 
 function HeroText() {
 	return (
-		<div className="px-36 py-14 flex flex-col gap-6">
-			<h1 className=" flex flex-col text-left text-4xl font-bold md:text-5xl lg:text-6xl">
-				<span>
-					HI👋, I’m{" "}
-					<span className="text-gray-text-primary-hover font-black">Naol</span>
+		<div className="flex flex-col gap-6 py-14 pl-36">
+			<h1 className="flex flex-col font-bold text-4xl md:text-5xl lg:text-6xl text-left">
+				<span className="flex items-center gap-2">
+					<span>HI👋, I’m </span>
+					<AvatarImage />
+					<span className="font-black text-gray-text-primary-hover">Naol</span>
 				</span>
-				<span className="text-green-text-primary font-black">Mobile Dev</span>{" "}
+				<span className="font-black text-green-text-primary">Mobile Dev</span>{" "}
 				<span>
 					from{" "}
-					<span className="text-gray-text-primary-hover font-black">
+					<span className="font-black text-gray-text-primary-hover">
 						Ethiopia
 					</span>
 				</span>
@@ -119,6 +124,20 @@ function SocialMediaLinks() {
 			>
 				<LinkedInIcon />
 			</Button>
+		</div>
+	);
+}
+
+function AvatarImage() {
+	return (
+		<div>
+			<Image
+				src="/naol.png"
+				alt={"Naol: mobile dev based in ethiopia"}
+				width={40}
+				height={40}
+				className="rounded-md"
+			/>
 		</div>
 	);
 }
