@@ -26,36 +26,42 @@ export default HeroSection;
 
 function HeroText() {
 	return (
-		<div className="flex flex-col gap-6 py-14 pl-36">
-			<h1 className="flex flex-col font-bold text-4xl md:text-5xl lg:text-6xl text-left">
-				<span className="flex items-center gap-2">
-					<span>HI👋, I’m </span>
-					<AvatarImage />
-					<span className="font-black text-gray-text-primary-hover">Naol</span>
-				</span>
-				<MorphingTextDemo />
-				<span>
-					from{" "}
-					<span className="font-black text-gray-text-primary-hover">
-						Ethiopia
+		<div className="flex flex-col gap-8 pt-14 pb-4 pl-36">
+			<div className="flex flex-col gap-6">
+				<h1 className="flex flex-col font-bold text-4xl md:text-5xl lg:text-6xl text-left">
+					<span className="flex items-center gap-2">
+						<span>HI👋, I’m </span>
+						<AvatarImage />
+						<span className="font-black text-gray-text-primary-hover">
+							Naol
+						</span>
 					</span>
-				</span>
-			</h1>
-			<div className="flex flex-col gap-4">
-				<p className="max-w-[48ch]">
-					I’m <span className="font-bold text-green-text-primary">Flutter</span>{" "}
-					developer and big{" "}
-					<span className="font-bold text-green-text-primary">UI/UX</span>{" "}
-					enthusiastic I think apps should tell a story like a painting. People
-					deserve great experiences, so I make awesome apps for awesome people.
-				</p>
-				<p className="max-w-[48ch]">
-					My dream?{" "}
-					<span className="font-bold text-green-text-primary">Design</span>,{" "}
-					<span className="font-bold text-green-text-primary">Build</span>,{" "}
-					<span className="font-bold text-green-text-primary">Make</span>, say
-					something that can change our stories for the better.
-				</p>
+					<MorphingTextDemo />
+					<span>
+						from{" "}
+						<span className="font-black text-gray-text-primary-hover">
+							Ethiopia
+						</span>
+					</span>
+				</h1>
+				<div className="flex flex-col gap-4">
+					<p className="max-w-[48ch]">
+						I’m{" "}
+						<span className="font-bold text-green-text-primary">Flutter</span>{" "}
+						developer and big{" "}
+						<span className="font-bold text-green-text-primary">UI/UX</span>{" "}
+						enthusiastic I think apps should tell a story like a painting.
+						People deserve great experiences, so I make awesome apps for awesome
+						people.
+					</p>
+					<p className="max-w-[48ch]">
+						My dream?{" "}
+						<span className="font-bold text-green-text-primary">Design</span>,{" "}
+						<span className="font-bold text-green-text-primary">Build</span>,{" "}
+						<span className="font-bold text-green-text-primary">Make</span>, say
+						something that can change our stories for the better.
+					</p>
+				</div>
 			</div>
 			<HeroButtons />
 		</div>
