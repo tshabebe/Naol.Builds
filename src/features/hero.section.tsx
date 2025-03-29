@@ -26,7 +26,7 @@ export default HeroSection;
 
 function HeroText() {
 	return (
-		<div className="flex flex-col gap-8 pt-14 pb-4 pl-36">
+		<div className="flex flex-col gap-14 pt-14 pb-6">
 			<div className="flex flex-col gap-6">
 				<h1 className="flex flex-col font-bold text-4xl md:text-5xl lg:text-6xl text-left">
 					<span className="flex items-center gap-2">
