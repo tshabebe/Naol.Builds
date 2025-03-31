@@ -43,10 +43,10 @@ export const paths = {
 		root: {
 			getHref: () => "/",
 		},
-		pricing: {
+		projects: {
 			getHref: () => "/pricing",
 		},
-		FAQ: {
+		skills: {
 			getHref: () => "/faq",
 		},
 		blogs: {

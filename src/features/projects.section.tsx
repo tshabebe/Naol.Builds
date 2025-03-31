@@ -24,11 +24,9 @@ export default ProjectsSection;
 
 function Projects() {
 	return (
-		<div className="bg-radial-[at_95%_40%] from-0% from-green-elevation-3 to-50% to-transparent">
-			<div className="flex gap-10 bg-[url(/background.png)] bg-repeat bg-center p-6 pt-14 border-4 rounded-3xl">
-				<ProjectsDescription />
-				<RuminateProjectSvg />
-			</div>
+		<div className="flex gap-10 bg-[url(/background.png)] bg-repeat bg-center p-6 pt-14 border-4 rounded-3xl">
+			<ProjectsDescription />
+			<RuminateProjectSvg />
 		</div>
 	);
 }
@@ -38,7 +36,7 @@ function ProjectsDescription() {
 		<div className="flex flex-col gap-14">
 			<div className="flex flex-col gap-5">
 				<div className="flex flex-col gap-2">
-					<h3 className="font-black text-lg md:text-xl lg:text-2xl whitespace-nowrap">
+					<h3 className="font-bold text-lg md:text-xl lg:text-2xl whitespace-nowrap">
 						Ruminate Journal
 					</h3>
 					<p className="max-w-[30ch] text-gray-text-secondary">
@@ -46,18 +44,18 @@ function ProjectsDescription() {
 						memories in imeline-based format.
 					</p>
 				</div>
-				<div className="flex flex-col">
-					<h4 className="font-black text-gray-text-secondary md:text-1xl text-lg lg:text-2xl">
+				<div className="flex flex-col gap-1.5">
+					<h4 className="font-bold text-gray-text-secondary md:text-1xl text-lg lg:text-2xl">
 						Technologies
 					</h4>
 					<div className="flex gap-2">
-						<span className="flex justify-center items-center bg-green-elevation-3 px-2 py-1 border border-green-border rounded-full font-bold text-green-text-primary text-xs">
+						<span className="flex justify-center items-center bg-green-elevation-3 px-1.5 py-0.5 border border-green-border rounded-md font-bold text-green-text-primary text-xs">
 							flutter
 						</span>
-						<span className="flex justify-center items-center bg-green-elevation-3 px-2 py-1 border border-green-border rounded-full font-bold text-green-text-primary text-xs">
+						<span className="flex justify-center items-center bg-green-elevation-3 px-1.5 py-0.5 border border-green-border rounded-md font-bold text-green-text-primary text-xs">
 							firebase
 						</span>
-						<span className="flex justify-center items-center bg-green-elevation-3 px-2 py-1 border border-green-border rounded-full font-bold text-green-text-primary text-xs">
+						<span className="flex justify-center items-center bg-green-elevation-3 px-1.5 py-0.5 border border-green-border rounded-md font-bold text-green-text-primary text-xs">
 							Blog
 						</span>
 					</div>

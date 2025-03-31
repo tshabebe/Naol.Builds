@@ -1,6 +1,7 @@
 import MotionDivWrapper from "@/features/motion.div.wrapper";
 import ProjectsSection from "@/features/projects.section";
 import SkillsSection from "@/features/skills.section";
+import WhereSection from "@/features/where.section";
 
 export default function LandingPage() {
 	return (
@@ -16,6 +17,11 @@ export default function LandingPage() {
 				</div>
 			</div>
 			<ProjectsSection />
+			<div className="bg-gray-elevation-2">
+				<div className="bg-[url(/background.png)] bg-repeat bg-center pt-6 pb-10">
+					<WhereSection />
+				</div>
+			</div>
 		</MotionDivWrapper>
 	);
 }

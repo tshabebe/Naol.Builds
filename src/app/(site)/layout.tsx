@@ -1,3 +1,4 @@
+import Footer from "@/features/footer";
 import HeroSection from "@/features/hero.section";
 import type { ReactNode } from "react";
 
@@ -9,6 +10,7 @@ function layout({ children }: { children: ReactNode }) {
 			</header>
 			<HeroSection />
 			{children}
+			<Footer />
 		</div>
 	);
 }
