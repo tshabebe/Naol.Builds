@@ -4,7 +4,7 @@ import { Icon } from "@/primitives/icon";
 
 function ProjectsSection() {
 	return (
-		<section className="flex flex-col gap-2 container">
+		<section className="flex flex-col gap-5 container">
 			<div className="flex gap-2">
 				<h1 className="font-black text-gray-text-secondary text-2xl md:text-3xl lg:text-4xl uppercase">
 					Projects
