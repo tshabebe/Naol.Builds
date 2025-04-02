@@ -55,6 +55,8 @@ interface BlogMetadata {
 	title: string;
 	publishedAt: string;
 	summary: string;
+	name: string;
+	role: string;
 	image?: string;
 }
 
